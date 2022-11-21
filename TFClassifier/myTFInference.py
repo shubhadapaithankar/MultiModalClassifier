@@ -42,7 +42,10 @@ def loadsavedmodel(path):
     return reconstructed_model
 
 def tfgetimagearray(path, img_height, img_width):
-    sunflower_url = "https://storage.googleapis.com/download.tensorflow.org/example_images/592px-Red_sunflower.jpg"
+    # sunflower_url = "https://storage.googleapis.com/download.tensorflow.org/example_images/592px-Red_sunflower.jpg"
+    # sunflower_path = tf.keras.utils.get_file('Red_sunflower', origin=sunflower_url)
+
+    sunflower_url = "/content/drive/MyDrive/Shubhada/MultiModalClassifier/cats_and_dogs_filtered/validation/cats/cat.2000.jpg"
     sunflower_path = tf.keras.utils.get_file('Red_sunflower', origin=sunflower_url)
 
     img = tf.keras.preprocessing.image.load_img(
@@ -116,7 +119,7 @@ def main():
     pltgetonlineimagearray(url)
     #img_array = tfgetimagearray(args.data_path, args.img_height, args.img_width)
 
-    class_names=['daisy', 'dandelion', 'roses', 'sunflowers', 'tulips']
+    class_names=["dog","cat"]
     inference(model, img_array, class_names)
 
 if __name__ == '__main__':

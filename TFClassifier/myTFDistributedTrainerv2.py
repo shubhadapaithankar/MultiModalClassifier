@@ -8,7 +8,7 @@ import time
 import os
 print(tf.__version__)
 
-from TFClassifier.Datasetutil.TFdatasetutil import loadTFdataset #loadtfds, loadkerasdataset, loadimagefolderdataset
+from TFClassifier.Datasetutil.TFdatasetutil import loadTFdataset ,loadtfds, loadkerasdataset, loadimagefolderdataset
 from TFClassifier.myTFmodels.CNNsimplemodels import createCNNsimplemodel
 from TFClassifier.Datasetutil.Visutil import plot25images, plot9imagesfromtfdataset, plot_history
 from TFClassifier.myTFmodels.optimizer_factory import build_learning_rate, setupTensorboardWriterforLR

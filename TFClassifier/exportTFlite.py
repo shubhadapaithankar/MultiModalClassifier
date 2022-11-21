@@ -5,6 +5,7 @@ from PIL import Image
 import time
 import io
 from numpy import asarray
+# from TFClassifier.Datasetutil.TFdatasetutil import loadTFdataset
 #import tflite_runtime.interpreter as tflite
 #ref: https://www.tensorflow.org/lite/guide/get_started https://www.tensorflow.org/lite/guide/inference#load_and_run_a_model_in_python
 #ref: https://github.com/lkk688/AndroidIntelligentApp/blob/main/pythonTFlite/tfliteclassify2.py
@@ -138,12 +139,14 @@ def loadimageint(path, img_height, img_width):
     return input_data
 
 if __name__ == '__main__':
-    saved_model_dir = '/home/lkk/Developer/MyRepo/MultiModalClassifier/outputs/flower_xceptionmodel1_0712/'
-    #testtfliteexport(saved_model_dir)
-    #tflitequanexport(saved_model_dir)
-    #tflitequanintexport(saved_model_dir)
+    # saved_model_dir = '/home/lkk/Developer/MyRepo/MultiModalClassifier/outputs/flower_xceptionmodel1_0712/'
+    saved_model_dir = "/content/drive/MyDrive/Shubhada/MultiModalClassifier/outputfashionMNIST_cnnsimple1_0629/"
+    testtfliteexport(saved_model_dir)
+    
+    tflitequanexport(saved_model_dir)
+    tflitequanintexport(saved_model_dir)
 
-    #testtfliteinference("converted_model_quant.tflite")#"converted_model.tflite"
+    testtfliteinference("converted_model_quant.tflite")#"converted_model.tflite"
     testtfliteinference("converted_model_quantint.tflite")
 
     

@@ -13,7 +13,7 @@ BATCH_SIZE = 32
 IMG_height = 180
 IMG_width = 180
 
-def loadTFdataset(name, type, path='/home/lkk/.keras/datasets/flower_photos', img_height=180, img_width=180, batch_size=32):
+def loadTFdataset(name, type, path='/content/drive/MyDrive/Shubhada/MultiModalClassifier/cats_and_dogs_filtered/', img_height=200, img_width=200, batch_size=32):
     global BATCH_SIZE
     BATCH_SIZE=batch_size
     global IMG_height, IMG_width
