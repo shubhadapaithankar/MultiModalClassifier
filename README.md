@@ -30,10 +30,18 @@ If you went to uninstall the package, perform the following step
 
 # Modified Changes as fallows
 
-## Colab Link : https://colab.research.google.com/drive/1Vrx3T7wf8gExZHyDh82pIEWGPHOWRpjc#scrollTo=WplVQH5ilkMK 
-## code modification Commits : https://github.com/lkk688/MultiModalClassifier/commit/985da0181c4a9d4c4a4e1a8789773a2c7857d851 
+## Colab Link :
 
-Steps : 
+<a href="https://colab.research.google.com/drive/1Vrx3T7wf8gExZHyDh82pIEWGPHOWRpjc#scrollTo=WplVQH5ilkMK 
+" target="_blank"> COLAB</a>
+
+## code modification Commits :
+
+<a href="https://github.com/lkk688/MultiModalClassifier/commit/985da0181c4a9d4c4a4e1a8789773a2c7857d851" target="_blank"> CODE-Cahnges</a>
+
+
+## Steps : 
+
 DATASET - 
 1. Downloaded the dataset of dog and cat consisting of 4000 samples.
 2. Tensorflow framework has been used to train the dataset.
@@ -69,6 +77,7 @@ DATASET -
 20. Openvino   - Inference - 116 FPS | modelsize = 22 KB
 
 
-Tensorflow flow model was pretty slow , i.e 5 fps or less in terms of giving the prediction.
-Further i converted the trained model to onnx format where i further got it converted to openvino runtime.
-From the above results, it pretty much gave  me 116 fps with good prediction as well.
+### Tensorflow flow model was pretty slow , i.e 5 fps or less in terms of giving the prediction.Further i converted the trained model to onnx format where i further got it converted to openvino runtime.From the above results, it pretty much gave  me 116 fps with good prediction as well.
+
+
+colab file: https://github.com/shubhadapaithankar/MultiModalClassifier/blob/main/Multimodel_classification_Shubhada.ipynb 
